@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles/styles.css">
@@ -10,6 +9,80 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Adjust styles for the about section */
+        .about-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .about-img {
+            width: 70%;
+            max-width: 500px;
+            height: auto;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .left-about {
+            max-width: 800px;
+        }
+
+        .left-about h4 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        .left-about p {
+            line-height: 1.6;
+            font-size: 18px;
+            margin: 0 auto;
+        }
+
+        /* Styles for skills section */
+        .skills {
+            margin-top: 40px;
+        }
+
+        .skills h4,
+        .skills p {
+            text-align: center;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .skills-list .skill-item {
+            background-color: rgba(0, 0, 0, 0.7); /* More solid background */
+            color: #ffffff; /* White text for contrast */
+            border-radius: 8px;
+            padding: 20px;
+            font-size: 16px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1 1 200px; /* Flex-grow, flex-shrink, flex-basis */
+            max-width: 250px; /* Set a maximum width */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: auto; /* Auto height to adjust with content */
+        }
+
+        .skill-item h5 {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body class="main-content">
     <header class="container header active" id="home">
@@ -17,21 +90,21 @@
             <div class="left-header">
                 <div class="h-shape"></div>
                 <div class="image">
-                    <img src="img/hero.png" alt="">
+                    <img src="img/Hero.jpg" alt="">
                 </div>
             </div>
             <div class="right-header">
                 <h1 class="name">
-                    Hi, I'm <span>Solano Milan Diaz.</span>
-                    A Web Developer.
+                    Hello World! 
+                    I am <span>Mahlatse Masemola.</span>
+                    A Data Science Graduate.
                 </h1>
                 <p>
-                    I'm a Web Developer, I love to create beautiful and functional websites.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, libero?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque blanditiis sed aut!
+                    I am passionate about unraveling the mysteries of data.
+                    Dive in and explore my journey, projects, and the exciting world of data science I’m so thrilled to share with you. Welcome to my portfolio!
                 </p>
                 <div class="btn-con">
-                    <a href="" class="main-btn">
+                    <a href="home/resume.pdf" class="main-btn" download>
                         <span class="btn-text">Download CV</span>
                         <span class="btn-icon"><i class="fas fa-download"></i></span>
                     </a>
@@ -42,413 +115,194 @@
     <main>
         <section class="container about" id="about">
             <div class="main-title">
-                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+                <h2>About <span>me</span></h2>
             </div>
             <div class="about-container">
+                <img src="img/me.jpg" alt="Mahlatse Masemola" class="about-img">
                 <div class="left-about">
-                    <h4>Information About me</h4>
+                    <h4>Get to know me better</h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Eveniet labore nihil obcaecati consequatur. Debitis error doloremque, 
-                        vero eos vel nemo eius voluptatem dicta tenetur modi. <br /> <br /> La musica
-                        delectus dolore fugiat exercitationem a, 
-                        ipsum quidem quo enim natus accusamus labore dolores nam. Unde.
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Harum non necessitatibus deleniti eum soluta.
+                        I am a dedicated data scientist with a postgraduate degree in Data Science and an undergraduate degree in Biochemistry and Physiology. 
+                        My diverse background has equipped me with a unique skill set for leveraging data-driven insights in strategic decision-making. 
+                        I excel at translating complex data into actionable recommendations through my expertise in collaborative problem-solving, data analytics, machine learning, and data visualization. 
+                        My curiosity and interdisciplinary approach enhance my flexibility and drive to deliver impactful results. 
+                        I am also committed to continuous learning and keeping up with with data science advancements.
                     </p>
-                    <div class="btn-con">
-                        <a href="#" class="main-btn">
-                            <span class="btn-text">Download CV</span>
-                            <span class="btn-icon"><i class="fas fa-download"></i></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="right-about">
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">650+</p>
-                            <p class="small-text">Projects <br /> Completed</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">10+</p>
-                            <p class="small-text">Years of <br /> experience</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">300+</p>
-                            <p class="small-text">Happy <br /> Clients</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">400+</p>
-                            <p class="small-text">Customer <br /> reviews</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="about-stats">
-                <h4 class="stat-title">My Skills</h4>
-                <div class="progress-bars">
-                    <div class="progress-bar">
-                        <p class="prog-title">html5</p>
-                        <div class="progress-con">
-                            <p class="prog-text">80%</p>
-                            <div class="progress">
-                                <span class="html"></span>
+                    <div class="skills">
+                        <h4>My Professional Skills</h4>
+                        <p>Skills I bring to the job:</p>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <h5>Applied Machine Learning</h5>
                             </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">css3</p>
-                        <div class="progress-con">
-                            <p class="prog-text">95%</p>
-                            <div class="progress">
-                                <span class="css"></span>
+                            <div class="skill-item">
+                                <h5>Data Storytelling</h5>
                             </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">javascript</p>
-                        <div class="progress-con">
-                            <p class="prog-text">75%</p>
-                            <div class="progress">
-                                <span class="js"></span>
+                            <div class="skill-item">
+                                <h5>Data Analytics</h5>
                             </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">ReactJS</p>
-                        <div class="progress-con">
-                            <p class="prog-text">75%</p>
-                            <div class="progress">
-                                <span class="react"></span>
+                            <div class="skill-item">
+                                <h5>R & Python Programming</h5>
                             </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">NodeJS</p>
-                        <div class="progress-con">
-                            <p class="prog-text">87%</p>
-                            <div class="progress">
-                                <span class="node"></span>
+                            <div class="skill-item">
+                                <h5>MySQL</h5>
                             </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Python</p>
-                        <div class="progress-con">
-                            <p class="prog-text">70%</p>
-                            <div class="progress">
-                                <span class="python"></span>
+                            <div class="skill-item">
+                                <h5>Version Control</h5>
+                            </div>
+                            <div class="skill-item">
+                                <h5>Microsoft Excel</h5>
+                            </div>
+                            <div class="skill-item">
+                                <h5>Microsoft Power BI & DAX</h5>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <h4 class="stat-title">My Timeline</h4>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">2010 - present</p>
-                    <h5>Web Developer<span> - Vircrosoft</span></h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">2008 - 2011</p>
-                    <h5>Software Engineer<span> - Boogle, Inc.</span></h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">2016 - 2017</p>
-                    <h5>C++ Programmer<span> - Slime Tech</span></h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">2009 - 2013</p>
-                    <h5>Business Degree<span> - Sussex University</span></h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">2013 - 2016</p>
-                    <h5>Computer Science Degree<span> - Brookes University</span></h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">2017 - present</p>
-                    <h5>3d Animation<span> - Brighton University</span></h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
-                    </p>
-                </div>
-            </div>
+        </section>
         </section>
         <section class="container" id="portfolio">
             <div class="main-title">
-                <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
+                <h2>My <span>Portfolio</span></h2>
             </div>
             <p class="port-text">
-                Here is some of my work that I've done in various programming languages.
+                Let's explore my coding journey together.
             </p>
             <div class="portfolios">
+                <!-- Project 1: Global Warming and CO2 Emissions -->
                 <div class="portfolio-item">
                     <div class="image">
-                        <img src="img/port1.jpg" alt="">
+                        <img src="img/global.jpeg" alt="Global Warming Project">
                     </div>
                     <div class="hover-items">
-                        <h3>Project Source</h3>
+                        <h3 style="text-align: center;">Global Warming and CO2 Emissions</h3>
                         <div class="icons">
-                            <a href="#" class="icon">
+                            <a href="https://github.com/MahlatseMasemola/Regression_Project" class="icon">
                                 <i class="fab fa-github"></i>
                             </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
                         </div>
+                        <p class="project-description" style="font-size: 12px; text-align: center;">
+                            This project analyzes CO2 emissions in the agri-food sector using regression modeling to identify sustainable strategies for mitigating climate change.
+                        </p>                        
                     </div>
                 </div>
+                <!-- Project 2: News Article Classification -->
                 <div class="portfolio-item">
                     <div class="image">
-                        <img src="img/port2.jpg" alt="">
+                        <img src="img/newspaper.jpg" alt="News Classification Project">
                     </div>
                     <div class="hover-items">
-                        <h3>Project Source</h3>
+                        <h3 style="text-align: center;">News Article Classification</h3>
                         <div class="icons">
-                            <a href="#" class="icon">
+                            <a href="https://github.com/MahlatseMasemola/2401FTDS_Classification_Project_JB4" class="icon">
                                 <i class="fab fa-github"></i>
                             </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
                         </div>
+                        <p class="project-description" style="font-size: 12px; text-align: center;">
+                            This project develops an automated news classification system using NLP and machine learning, deployed as a web application using Streamlit.
+                        </p>
                     </div>
                 </div>
+                <!-- Project 3: Anime Recommender System -->
                 <div class="portfolio-item">
                     <div class="image">
-                        <img src="img/port3.jpg" alt="">
+                        <img src="img/anime.jpg" alt="Anime Recommender System">
                     </div>
                     <div class="hover-items">
-                        <h3>Project Source</h3>
+                        <h3 style="text-align: center;">Anime Recommender System</h3>
                         <div class="icons">
-                            <a href="#" class="icon">
+                            <a href="https://github.com/username/anime-recommender" class="icon">
                                 <i class="fab fa-github"></i>
                             </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
                         </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port4.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port5.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port2.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port7.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
+                        <p class="project-description" style="font-size: 12px; text-align: center;">
+                            This project builds a collaborative and content-based recommender system for anime titles, covering the entire workflow from data loading to deployment.
+                        </p>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="container" id="blogs">
-            <div class="blogs-content">
-                <div class="main-title">
-                    <h2>My <span>Blogs</span><span class="bg-text">My Blogs</span></h2>
+        </section>                      
+    </section>
+    <section class="container" id="blogs">
+        <div class="blogs-content">
+            <div class="main-title">
+                <h2>My <span>Education</span></h2>
+            </div>
+            <div class="blogs">
+                <div class="blog">
+                    <img src="img/explore.jpeg" alt="">
+                    <div class="blog-text">
+                        <h4>
+                            Data Science Learnership
+                        </h4>
+                        <p>
+                            Year: 2024<br>
+                            Institution: Explore AI Academy<br>
+                            ____________________
+                        </p>
+                        <p> Relevant Coursework:<br>
+                        &bull; Python Programming<br>
+                        &bull; MySQL<br>
+                        &bull; Microsoft Excel<br>
+                        &bull; Microsoft Power BI<br>
+                        &bull; Unsupervised and Supervised Machine Learning</p>
+                    </div>
                 </div>
-                <div class="blogs">
-                    <div class="blog">
-                        <img src="img/port6.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                How to Create Your Own Website
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
+                <div class="blog">
+                    <img src="img/stellenbosch.jpg" alt="">
+                    <div class="blog-text">
+                        <h4>
+                            PgDip Industrial Engineering (Focus: Data Science)
+                        </h4>
+                        <p>
+                            Year: 2023-2024<br>
+                            Institution: Stellenbosch University<br>
+                            __________________________
+                        </p>
+                        <p> Relevant Coursework:<br>
+                        &bull; R Programming <br>
+                        &bull; Big Data Technologies<br>
+                        &bull; Data Science<br>
+                        &bull; Applied Machine Learning<br>
+                        &bull; Data Analytics<br>
+                        &bull; Optimization<br>
+                        &bull; Project Management</p>
                     </div>
-                    <div class="blog">
-                        <img src="img/blog1.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                How to Become an Expert in Web Design
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/blog2.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                Become a Web Designer in 10 Days
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/blog3.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                Debbuging made easy with Web Inspector
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/port1.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                Get started with Web Design and UI Design
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/port3.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                This is what you need to know about Web Design
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
+                </div>
+                <div class="blog">
+                    <img src="img/university.png" alt="">
+                    <div class="blog-text">
+                        <h4>
+                            BSc Biochemistry and Physiology
+                        </h4>
+                        <p>
+                            Year: 2019-2023<br>
+                            Institution: University of Johannesburg<br>
+                            ____________________
+                        </p>
+                        <p> Relevant Coursework:<br>
+                        &bull; Mathematics<br>
+                        &bull; Chemistry<br>
+                        &bull; Physics<br>
+                        &bull; Microbiology<br>
+                        &bull; Biochemistry<br>
+                        &bull; Physiology</p>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+        </section>                
         </section>
         <section class="container contact" id="contact">
             <div class="contact-container">
                 <div class="main-title">
-                    <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
+                    <h2>Contact <span>Me</span></h2>
                 </div>
                 <div class="contact-content-con">
                     <div class="left-contact">
                         <h4>Contact me here</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            In, laborum numquam? Quam excepturi perspiciatis quas quasi.
-                        </p>
                         <div class="contact-info">
                             <div class="contact-item">
                                 <div class="icon">
@@ -456,7 +310,7 @@
                                     <span>Location</span>
                                 </div>
                                 <p>
-                                    : London, united Kingdom
+                                    : JHB, South Africa
                                 </p>
                             </div>
                             <div class="contact-item">
@@ -465,16 +319,7 @@
                                     <span>Email</span>
                                 </div>
                                 <p>
-                                    <span>: maclinzuniversal@gmail.com</span>
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-user-graduate"></i>
-                                    <span>Education</span>
-                                </div>
-                                <p>
-                                    <span>: Sussex University, East Sussex</span>
+                                    <span>: masemola.hunadi@gmail.com</span>
                                 </p>
                             </div>
                             <div class="contact-item">
@@ -483,32 +328,17 @@
                                     <span>Mobile Number</span>
                                 </div>
                                 <p>
-                                    <span>: 07522670617</span>
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-globe-africa"></i>
-                                    <span>Languages</span>
-                                </div>
-                                <p>
-                                    <span>: Afrikaans, English, Spanish</span>
+                                    <span>: 069 904 9915</span>
                                 </p>
                             </div>
                         </div>
                         <div class="contact-icons">
                             <div class="contact-icon">
-                                <a href="www.facebook.com" target="_blank">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="#" target="_blank">
+                                <a href="https://github.com/MahlatseMasemola" target="_blank">
                                     <i class="fab fa-github"></i>
                                 </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-youtube"></i>
+                                <a href="https://www.linkedin.com/in/mahlatse-masemola/" target="_blank">
+                                    <i class="fab fa-linkedin-in"></i>
                                 </a>
                             </div>
                         </div>
@@ -526,16 +356,13 @@
                                 <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
                             </div>
                             <div class="submit-btn">
-                                <a href="#" class="main-btn">
-                                    <span class="btn-text">Download CV</span>
-                                    <span class="btn-icon"><i class="fas fa-download"></i></span>
-                                </a>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
+    </section>
     </main>
 
     <div class="controls">
@@ -554,9 +381,6 @@
         <div class="control" data-id="contact">
             <i class="fas fa-envelope-open"></i>
         </div>
-    </div>
-    <div class="theme-btn">
-        <i class="fas fa-adjust"></i>
     </div>
     <script src="app.js"></script>
 </body>
